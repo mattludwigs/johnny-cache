@@ -1,6 +1,6 @@
 # Johnny Cache v0.0.1
 
-Johnny is a simple and light weight JSON UDP cache server in Go!
+Johnny is a simple and light weight, in memory, JSON UDP cache server in Go!
 
 ## Why not TCP or HTTP?
 
