@@ -8,7 +8,7 @@ Too easy! I wanted to learn about UDP since I live in the HTTP world and already
 
 ## How to use
 
-Johnny Cache basically accepts stringified JSON objects. There are three protocols of right now `SET_DB`, `SET`, and `GET`. Be sure to buffer your stringified JSON before sending to Johnny. I will probably write a node module to handle talking to a Johnny Cache server to make this even easier.
+Johnny Cache basically accepts stringified JSON objects. There are three protocols as of right now `SET_DB`, `SET`, and `GET`. Be sure to buffer your stringified JSON before sending to Johnny. I will probably write a node module to handle talking to a Johnny Cache server to make this even easier.
 
 ### SET_DB
 
