@@ -4,7 +4,7 @@ Johnny Cache is a simple and light weight, in memory, JSON caching UDP server in
 
 ## Why not TCP or HTTP?
 
-Too easy! I wanted to learn about UDP since I live in the HTTP world and already have good knowledge on HTTP and TCP servers. Plus UDP is supposed to be faster. The question here is, "Why **not** UDP?" Oh, since this UDP packet loss can be a thing, so do use this for caching important data.
+Too easy! I wanted to learn about UDP since I live in the HTTP world and already have good knowledge on HTTP and TCP servers. Plus UDP is supposed to be faster. The question here is, "Why **not** UDP?" Oh, since this UDP packet loss can be a thing, so do use this is for caching important data.
 
 ## How to use
 
