@@ -62,13 +62,13 @@ This is listening on port 2000 by default. It should take comandline args to dyn
 
 ## To Run the Node Client
 
-First, you will need node installed if you wanted to run. From the Johnny Cache directory type:
+First, you will need node installed if you wanted to run. While, Johnny is running and from the Johnny Cache directory type:
 
 ```
 $ node ./example-client.js
 ```
 
-This will set up a test DB in the Johnny Cache server, and save two records, and then query that namespace. You just have to watch the terminal to see what gets printed out.
+This will set up a test namespace in the Johnny Cache server, and save two records, and then query that namespace. You just have to watch the terminal to see what gets printed out.
 
 ## Road Map
 
