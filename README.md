@@ -87,4 +87,3 @@ Not sure, since I am a Go noob, but here are somethings:
 Help wanted! I can learn a lot more about Go from others and I would love the input to make this better!
 In your PR make sure you have your branch being merged into the develop branch
 
- 
