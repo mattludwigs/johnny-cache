@@ -2,7 +2,7 @@
 
 Johnny Cache is a simple and light weight, in memory, JSON caching UDP server in Go!
 
-### UDP
+## Why UDP?
 
 Because!
 
