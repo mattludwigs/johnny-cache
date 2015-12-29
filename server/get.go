@@ -3,7 +3,7 @@ package server
 func HandleGet(dstore DataStore) []map[string]interface{} {
   query := dstore.Query
   keys := GetKeys(query)
-  store := cache.Stores[dstore.DBName]
+  store := cache.Stores[dstore.NameSpace]
 
   res := make([]map[string]interface{}, 0)
 
