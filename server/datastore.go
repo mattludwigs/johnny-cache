@@ -6,7 +6,7 @@ import (
 
 type DataStore struct {
   Method string `json:"method"`
-  DBName string `json:"dbName,omitempty"`
+  NameSpace string `json:"namespace,omitempty"`
   Data map[string]interface{} `json:"data,omitempty"`
   Query map[string]interface{} `json:"query,omitempty"`
 }

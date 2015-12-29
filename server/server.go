@@ -29,12 +29,12 @@ func ServerRun(port string) {
 
     dstore := FromJSON(packet[0:n])
 
-    if dstore.Method == "SET_DB" {
+    if dstore.Method == "SET_NAMESPACE" {
       response := make(chan StatusResponse)
       // @TODO: make into a func
       go func() {
-        name := dstore.Data["dbName"]
-        cache.Stores[name.(string)] = make([]map[string]interface{}, 0)
+        name := dstore.NameSpace
+        cache.Stores[name] = make([]map[string]interface{}, 0)
         response <- StatusResponse{ Status: "DB MADE" }
       }()
       res := <-response
@@ -45,8 +45,8 @@ func ServerRun(port string) {
       response := make(chan StatusResponse)
       // @TODO: make into a func
       go func() {
-        stores := cache.Stores[dstore.DBName]
-        cache.Stores[dstore.DBName] = append(stores, dstore.Data)
+        stores := cache.Stores[dstore.NameSpace]
+        cache.Stores[dstore.NameSpace] = append(stores, dstore.Data)
         response <- StatusResponse{ Status: "SAVED" }
       }()
       res := <-response

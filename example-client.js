@@ -2,23 +2,19 @@
 
 
 /**
-*
 * Example node UDP client that talks to the Johnny Cache server
-*
 */
 
 const dgram = require('dgram');
 const client = dgram.createSocket('udp4');
 
 const config = makeMessage({
-  "method": "SET_DB",
-  "data": {
-    "dbName": "projects"
-  }
+  "method": "SET_NAMESPACE",
+  "namespace": "projects"
 });
 
 const post = {
-  "dbName": "projects",
+  "namespace": "projects",
   "method": "SET",
   "data": {
     "name": "bob",
@@ -27,7 +23,7 @@ const post = {
 }
 
 const post2 = makeMessage({
-  "dbName": "projects",
+  "namespace": "projects",
   "method": "SET",
   "data": {
     "name": "Something Cool",
@@ -70,7 +66,7 @@ setTimeout(() => {
 // Get some data
 setTimeout(() => {
   send(makeMessage({
-    "dbName": "projects",
+    "namespace": "projects",
     "method": "GET",
     "query": {
       "dateStart": "Today"
